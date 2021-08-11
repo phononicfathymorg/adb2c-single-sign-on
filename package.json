@@ -22,7 +22,8 @@
     "files": [
         "/user-flows",
         "LICENSE",
-        "README.md"
+        "README.md",
+        "index.html"
     ],
     "devDependencies": {
         "http-server": "^13.0.0"
