@@ -650,3 +650,22 @@ html {
     }
 }
 /* endinject */
+
+#SignInWithLogonNameExchange,
+#SignUpWithLogonEmailExchange,
+#SignUpWithLogonNameExchange {
+    background-image: url(https://fathymcloudint.b2clogin.com/static/tenant/templates/idp_logos/colored/local.svg);
+}
+#SignInWithLogonNameExchange:hover,
+#SignUpWithLogonEmailExchange:hover,
+#SignUpWithLogonNameExchange:hover {
+    background-image: url(https://fathymcloudint.b2clogin.com/static/tenant/templates/idp_logos/white/local.svg);
+}
+#SignUpWithLogonEmailExchange.text-link {
+    background-image: none;
+    background-color: transparent !important;
+}
+#SignUpWithLogonEmailExchange.text-link:hover {
+    background-image: none;
+    background-color: transparent !important;
+}
