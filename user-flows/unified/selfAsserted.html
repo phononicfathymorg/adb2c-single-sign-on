@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>User details</title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="utf-8" />
+        <meta name="locale" content="en-US" />
+        <meta name="ROBOTS" content="NONE, NOARCHIVE" />
+        <meta name="GOOGLEBOT" content="NOARCHIVE" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"
+        />
+
+        <link
+            href="https://www.iot-ensemble.com/adb2c/user-flows/user-flows.css"
+            rel="stylesheet"
+            type="text/css"
+            data-preload="true"
+        />
+    </head>
+    <body>
+        <div
+            id="background_branding_container"
+            data-tenant-branding-background-color="true"
+        >
+            <img
+                id="background_background_image"
+                data-tenant-branding-background="true"
+                src="https://login.microsoftonline.com/static/tenant/default/img/default_signin_illustration_optimized.png"
+                alt="Illustration"
+                aria-hidden="true"
+            />
+        </div>
+        <div class="panel" id="panel">
+            <table class="panel_layout" role="presentation">
+                <tbody>
+                    <tr class="panel_layout_row">
+                        <td id="panel_left" />
+                        <td id="panel_center">
+                            <div class="inner_container">
+                                <div class="api_container normaltext">
+                                    <img
+                                        alt="Company Logo"
+                                        class="companyLogo"
+                                        style="display: none"
+                                        data-tenant-branding-logo="true"
+                                    />
+                                    <div id="api" role="main"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script>
+            'use strict';
+            $(document).ready(function () {
+                if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                    var t = document.createElement('style');
+                    t.appendChild(
+                        document.createTextNode(
+                            '@-ms-viewport{width:auto!important}'
+                        )
+                    ),
+                        t.appendChild(
+                            document.createTextNode(
+                                '@-ms-viewport{height:auto!important}'
+                            )
+                        ),
+                        document.getElementsByTagName('head')[0].appendChild(t);
+                }
+                if (navigator.userAgent.match(/MSIE 10/i)) {
+                    var e = $('#footer_links_container');
+                    $(e).css('padding-top', '100px');
+                }
+                var o,
+                    i = $('#background_background_image'),
+                    n = function () {
+                        (document.body.style.overflow = 'hidden'),
+                            ($(window).width() - 500) / $(window).height() < o
+                                ? (i.height($(window).height()),
+                                  i.width('auto'))
+                                : (i.width($(window).width() - 500),
+                                  i.height('auto')),
+                            (document.body.style.overflow = '');
+                    };
+                $('<img>')
+                    .attr('src', i.attr('src'))
+                    .on('load', function () {
+                        (o = this.width / this.height), n();
+                    }),
+                    $(window).resize(function () {
+                        n();
+                    }),
+                    'undefined' != typeof $('#MicrosoftAccountExchange') &&
+                        $('#MicrosoftAccountExchange').text('Microsoft'),
+                    $('*').removeAttr('placeholder');
+            });
+        </script>
+    </body>
+</html>

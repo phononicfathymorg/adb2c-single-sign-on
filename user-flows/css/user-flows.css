@@ -1,0 +1,615 @@
+@import url(_custom.css);
+
+/* From Exceptions */
+.error-page-help,
+.error-page-messagedetails,
+body {
+    font-family: wf_segoe-ui_normal, 'Segoe UI', 'Segoe WP', Tahoma, Arial,
+        sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+a,
+h2 {
+    font-weight: 700;
+}
+img {
+    border: 0;
+}
+h2 {
+    font-size: 1.1em;
+    padding-bottom: 3px;
+}
+a {
+    text-decoration: none;
+    color: #696969;
+}
+a:visited {
+    font-weight: 400;
+}
+a:hover {
+    text-decoration: underline;
+}
+.error-page {
+    margin: 110px 0 0 80px;
+    position: relative;
+}
+.error-page-content {
+    position: absolute;
+    top: 110px;
+    width: 310px;
+    color: #000;
+}
+#api {
+    height: 100%;
+}
+.error-page-image {
+    position: absolute;
+    top: 0;
+    left: 320px;
+}
+.error-page-help {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.error-page-messagedetails {
+    font-weight: 300;
+    font-size: 12px;
+    margin-bottom: 21px;
+}
+.error-body {
+    position: absolute;
+    top: 750px;
+    left: 16px;
+    right: 16px;
+}
+.api_container div {
+    padding-bottom: 0;
+}
+/* End from Exceptions */
+
+/* From Self Asserted */
+.div.buttons.verify label {
+    display: none !important;
+}
+.buttons button {
+    width: auto !important;
+}
+.intro,
+.tiny {
+    display: none;
+}
+::-webkit-input-placeholder {
+    color: #767676;
+}
+:-moz-placeholder {
+    color: #767676;
+}
+::-moz-placeholder {
+    color: #767676;
+}
+:-ms-input-placeholder {
+    color: #767676;
+}
+span.placeholder {
+    color: #767676;
+    margin: 6px 0 0 -6px;
+    padding-left: 10px;
+    width: 380px;
+    z-index: -1;
+}
+.attrEntry {
+    padding-top: 8px;
+}
+.attrEntry .error.itemLevel {
+    display: none;
+    color: #a61e0c;
+    font-size: 0.9em;
+}
+.attrEntry.validate .error.itemLevel.show,
+.attrEntry.validate .helpText.show,
+.helpText.show {
+    display: block;
+}
+.attrEntry input:invalid {
+    outline: 0;
+}
+.attrEntry.validate input:invalid {
+    outline: #a61e0c solid 1px;
+    background-color: #fce8e8;
+}
+.attrEntry .helpText {
+    display: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #a61e0c;
+    font-size: 0.9em;
+}
+.pageLevel {
+    width: calc(100% - 35px);
+}
+.attrEntry input[type='email'],
+.attrEntry input[type='password'],
+.attrEntry input[type='text'],
+.attrEntry select {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    height: 28px;
+    margin: 3px 0;
+    border: 1px solid #b8b8b8;
+    z-index: 3;
+    background: 0 0;
+    color: #000;
+    padding: 0 0 0 3px;
+    -moz-box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+.attrEntry input[type='checkbox']:focus,
+.attrEntry input[type='email']:focus,
+.attrEntry input[type='password']:focus,
+.attrEntry input[type='radio']:focus,
+.attrEntry input[type='text']:focus,
+.attrEntry select:focus {
+    outline: 1px solid #4d90fe;
+}
+.attrEntry .day {
+    width: 100px;
+    margin-right: 10px;
+}
+.attrEntry .month {
+    width: 120px;
+    margin-right: 10px;
+}
+.attrEntry .year {
+    width: 115px;
+    margin-right: 10px;
+}
+.attrEntry .dropdown_single {
+    width: 355px;
+    margin: 0 100px 0 0;
+}
+.attrEntry input[type='text'],
+input[type='email'],
+input[type='password'] {
+    width: calc(100% - 30px) !important;
+    margin-right: 0 !important;
+}
+.errorText {
+    padding: 20px;
+    width: 310px;
+}
+.alert-modal,
+.verifying-modal {
+    display: none;
+}
+.verifying-modal {
+    color: #fff;
+    font-size: 24px;
+    display: none;
+    font-family: 'Segoe UI', Segoe, SegoeUI-Regular-final, Tahoma, Helvetica,
+        Arial, sans-serif;
+}
+@-moz-document url-prefix() {
+    #AmazonExchange::-moz-focus-inner,
+    #FacebookExchange::-moz-focus-inner,
+    #GoogleExchange::-moz-focus-inner,
+    #LinkedInExchange::-moz-focus-inner,
+    #MicrosoftAccountExchange::-moz-focus-inner {
+        padding-left: 45px;
+    }
+    #AmazonExchange,
+    #FacebookExchange,
+    #GoogleExchange,
+    #LinkedInExchange,
+    #MicrosoftAccountExchange {
+        padding-left: 0;
+    }
+}
+.disclaimer-container {
+    text-align: left;
+    font-size: 10px;
+}
+.disclaimer-container .disclaimer-link {
+    display: block;
+    width: fit-content;
+}
+/* End Self Asserted */
+
+/* MultiFactor */
+#api ul li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 0;
+}
+span.placeholder {
+    color: #696969;
+    margin: 6px 0 0 -6px;
+    padding-left: 10px;
+    width: 380px;
+    z-index: -1;
+}
+input[type='text'],
+select {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    height: 28px;
+    margin: 0;
+    border: 1px solid #b8b8b8;
+    z-index: 3;
+    background: 0 0;
+    color: #000;
+    padding: 0 0 0 3px;
+    -moz-box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+input[type='text']:focus {
+    border: 1px solid #6b6b6b;
+}
+input[type='text']:invalid {
+    outline: 0;
+}
+#countryCode {
+    width: auto;
+    margin: 0 100px 0 0;
+}
+#localNumber {
+    width: 135px;
+}
+#oneWaySmsControls,
+#phoneEntry,
+#phoneNumbers {
+    padding: 5px 0;
+}
+.phoneNumber {
+    padding-top: 3px;
+}
+#retryCode {
+    width: auto;
+}
+.errorText {
+    padding: 20px;
+    width: 310px;
+}
+#phoneEntry,
+#phoneNumbers {
+    margin: 18px 0;
+}
+.phoneNumber div {
+    display: inline;
+    line-height: 32px;
+}
+.phoneNumber .number {
+    font-weight: 500;
+}
+.numberSelector {
+    padding-right: 5px;
+}
+.type:after {
+    content: '-';
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.buttons {
+    margin-top: 3px;
+}
+.buttons button {
+    min-width: 90px;
+    margin-right: 3px;
+}
+.textButton {
+    display: inline;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    outline-offset: 0;
+    color: #00f;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.textButton::-moz-focus-inner {
+    border: none;
+    padding: 0;
+}
+.textButton,
+.textButton:hover {
+    background: 0 0;
+    border: none;
+    padding: 0;
+}
+.working {
+    display: none;
+}
+.actionLabel label {
+    display: inline-block;
+    vertical-align: baseline;
+}
+.codePart {
+    height: 32px;
+    width: 28px;
+}
+#verificationCode {
+    width: 85px;
+}
+/* End MultiFactor */
+
+/* From Update Profile */
+
+.div.buttons.verify label {
+    display: none !important;
+}
+.intro,
+.tiny {
+    display: none;
+}
+span.placeholder {
+    color: #696969;
+    margin: 6px 0 0 -6px;
+    padding-left: 10px;
+    width: 380px;
+    z-index: -1;
+}
+.attrEntry {
+    padding-top: 8px;
+}
+.attrEntry .error.itemLevel {
+    display: none;
+    color: #a61e0c;
+    font-size: 0.9em;
+}
+.attrEntry.validate .error.itemLevel.show,
+.attrEntry.validate .helpText.show,
+.helpText.show {
+    display: block;
+}
+.attrEntry input:invalid {
+    outline: 0;
+}
+.attrEntry.validate input:invalid {
+    outline: #a61e0c solid 1px;
+    background-color: #fce8e8;
+}
+.attrEntry .helpText {
+    display: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #a61e0c;
+    font-size: 0.9em;
+}
+.pageLevel {
+    width: calc(100% - 35px);
+}
+.attrEntry input[type='text'],
+.day,
+.dropdown_single,
+.month,
+.year,
+input[type='password'] {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    height: 28px;
+    margin: 3px 0;
+    border: 1px solid #b8b8b8;
+    z-index: 3;
+    background: 0 0;
+    color: #000;
+    padding: 0 0 0 3px;
+    -moz-box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+.attrEntry .day {
+    width: 100px;
+    margin-right: 10px;
+}
+.attrEntry .month {
+    width: 120px;
+    margin-right: 10px;
+}
+.attrEntry .year {
+    width: 115px;
+    margin-right: 10px;
+}
+.attrEntry .dropdown_single {
+    width: 355px;
+    margin: 0 100px 0 0;
+}
+.attrEntry input[type='text'],
+input[type='password'] {
+    width: calc(100% - 30px) !important;
+    margin-right: 0 !important;
+}
+.attrEntry input[type='text']:focus {
+    border: 1px solid #6b6b6b;
+}
+.errorText {
+    padding: 20px;
+    width: 310px;
+}
+.buttons button {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-user-select: none;
+    user-select: none;
+    background: #2672e6;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 4px;
+    margin-left: 0;
+    padding: 6px 12px;
+    transition: background 1s ease 0s;
+    width: auto;
+    height: auto;
+    font-size: 100%;
+}
+.buttons button:disabled,
+button[disabled] {
+    background-color: #696969;
+}
+.buttons button:hover {
+    background: #0f3e83;
+    border: 1px solid #fff;
+    -moz-box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+.button:focus {
+    outline: gold solid 1px;
+}
+.alert-modal,
+.verifying-modal {
+    display: none;
+}
+.verifying-modal {
+    color: #fff;
+    font-size: 24px;
+    display: none;
+    font-family: 'Segoe UI', Segoe, SegoeUI-Regular-final, Tahoma, Helvetica,
+        Arial, sans-serif;
+}
+@-moz-document url-prefix() {
+    #AmazonExchange::-moz-focus-inner,
+    #FacebookExchange::-moz-focus-inner,
+    #GoogleExchange::-moz-focus-inner,
+    #LinkedInExchange::-moz-focus-inner,
+    #MicrosoftAccountExchange::-moz-focus-inner {
+        padding-left: 45px;
+    }
+    #AmazonExchange,
+    #FacebookExchange,
+    #GoogleExchange,
+    #LinkedInExchange,
+    #MicrosoftAccountExchange {
+        padding-left: 0;
+    }
+}
+/* End From Update Profile */
+
+/* From Unified */
+
+.rememberMe input[type='checkbox'] {
+    vertical-align: middle;
+    position: relative;
+    bottom: -2.5px;
+    width: 13px;
+}
+.rememberMe label {
+    display: inline-block;
+}
+
+.intro {
+    display: inline;
+    margin-bottom: 5px;
+}
+.intro p {
+    padding-bottom: 7px;
+}
+.entry {
+    padding-top: 8px;
+    padding-bottom: 0 !important;
+}
+.entry input {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    height: 28px;
+    width: 300px;
+    border: 1px solid #b8b8b8;
+    z-index: 3;
+    background: 0 0;
+    color: #000;
+    padding: 0 0 0 3px;
+    -moz-box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+    margin-bottom: 7px;
+}
+#next {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30.5px;
+}
+#next:hover,
+.accountButton:hover {
+    -moz-box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+.create {
+    width: 100%;
+    margin-top: 7px;
+}
+#createAccount {
+    margin-left: 5px;
+}
+.password-label label {
+    display: inline-block;
+    vertical-align: baseline;
+}
+.invalid,
+.required,
+.unknown {
+    display: none;
+}
+#forgotPassword {
+    font-size: 0.75em;
+    padding-left: 5px;
+}
+.passwordReqs {
+    display: block;
+    font-size: 0.8em;
+    padding-bottom: 2px;
+}
+.localAccount .divider,
+.working {
+    display: none;
+}
+.tiny {
+    font-size: 0.8em;
+    font-weight: 400;
+    padding-left: 5px;
+}
+.divider {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.divider h2 {
+    display: table;
+    white-space: nowrap;
+    font-size: 1em;
+    font-weight: 700;
+}
+.divider h2:after,
+.divider h2:before {
+    border-top: 1px solid #b8b8b8;
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 0.7em;
+    width: 50%;
+}
+.divider h2:before {
+    right: 1.8%;
+}
+.divider h2:after {
+    left: 1.8%;
+}
+.verificationErrorText {
+    color: #d63301;
+}
+.options div {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 7px;
+}
+/* End From Unified */

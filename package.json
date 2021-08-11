@@ -1,0 +1,30 @@
+{
+    "name": "@fathym/adb2c-single-sign-on",
+    "version": "0.0.0",
+    "description": "The ADB2C UI customizations for the single sign on flow.",
+    "main": "index.js",
+    "scripts": {
+        "deploy": "npm version patch && npm run deploy:all",
+        "deploy:all": "npm run build && npm publish --access public",
+        "start": "http-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fathym/adb2c-single-sign-on.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/fathym/adb2c-single-sign-on/issues"
+    },
+    "homepage": "https://github.com/fathym/adb2c-single-sign-on#readme",
+    "files": [
+        "/user-flows",
+        "LICENSE",
+        "README.md"
+    ],
+    "devDependencies": {
+        "http-server": "^13.0.0"
+    }
+}
