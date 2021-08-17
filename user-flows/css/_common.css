@@ -1,3 +1,10 @@
+:root {
+    --dark_green: #4a918e;
+    --light_green: #92aba3;
+    --aqua_green: #1f918b;
+    --dark_grey: #282D35;
+  }
+
 @font-face {
     font-family: 'SegoeUI';
     src: url(https://fathymcloudint.b2clogin.com/static/tenant/templates/fonts/segoeui.WOFF);
@@ -668,4 +675,34 @@ html {
 #SignUpWithLogonEmailExchange.text-link:hover {
     background-image: none;
     background-color: transparent !important;
+}
+
+
+/* custom */
+#next{
+    background-color: var(--aqua_green);
+}
+
+#next:hover{
+    background-color: var(--dark_green);
+}
+
+#continue{
+    background-color: var(--aqua_green);
+}
+
+.sendCode{
+    background-color: var(--aqua_green);
+}
+
+.sendCode:hover{
+    background-color: var(--dark_green);
+}
+
+#forgotPassword{
+    color: var(--aqua_green);
+}
+
+#createAccount{
+    color: var(--aqua_green);
 }
