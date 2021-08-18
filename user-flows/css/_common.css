@@ -171,7 +171,7 @@ ul {
 #SignInWithLogonNameExchange,
 #SignUpWithLogonEmailExchange,
 #SignUpWithLogonNameExchange {
-    background-color: #296ec6;
+    background-color: var(--aqua_green);
     background-image: url(none);
     background-size: 10%;
     background-position-x: 95%;
@@ -229,7 +229,7 @@ ul {
     margin: 0 auto;
     width: 60%;
     height: 50px;
-    background-color: #296ec6;
+    background-color: var(--aqua_green);
     border-radius: 0.5rem;
     border: none;
     color: #fff;
@@ -237,7 +237,7 @@ ul {
     margin-top: 10px;
 }
 .buttons button:hover {
-    background-color: #1662c7;
+    background-color: var(--dark_green);
     border-color: #204d74;
 }
 .buttons button[aria-disabled='true'] {
@@ -333,22 +333,22 @@ label {
 #attributeList ul li .attrEntry .verify .sendButton[id$='ver_but_send'] {
     width: 60%;
     height: 50px;
-    background-color: #296ec6;
+    background-color: var(--aqua_green);
     color: #fff;
     border-radius: 0.5rem;
 }
 #attributeList ul li .attrEntry .verificationControlContent .sendCode {
     width: 60%;
     height: 50px;
-    background-color: #296ec6;
+    background-color: var(--aqua_green);
     color: #fff;
     border-radius: 0.5rem;
 }
 #attributeList ul li .attrEntry .verify .sendButton[id$='ver_but_send']:hover {
-    background-color: #1662c7;
+    background-color: var(--dark_green);
 }
 #attributeList ul li .attrEntry .verificationControlContent .sendCode:hover {
-    background-color: #1662c7;
+        background-color: var(--dark_green);
 }
 @media screen and (-ms-high-contrast: active) {
     #attributeList ul li .attrEntry .verify button,
@@ -364,7 +364,7 @@ label {
     width: inherit;
     padding: 0 20px;
     height: 50px;
-    background-color: #296ec6;
+    background-color: var(--aqua_green);
     color: #fff;
     margin-right: 5px;
     border-radius: 0.5rem;
@@ -373,16 +373,16 @@ label {
     width: inherit;
     padding: 0 20px;
     height: 50px;
-    background-color: #296ec6;
+    background-color: var(--aqua_green);
     color: #fff;
     margin-right: 5px;
     border-radius: 0.5rem;
 }
 #attributeList ul li .attrEntry .verify .verifyButton:hover {
-    background-color: #1662c7;
+    background-color: var(--dark_green);
 }
 #attributeList ul li .attrEntry .verificationControlContent .verifyCode:hover {
-    background-color: #1662c7;
+    background-color: var(--dark_green);
 }
 #attributeList ul li .attrEntry .verify .sendButton[id$='ver_but_resend'] {
     width: inherit;
@@ -392,7 +392,7 @@ label {
     height: 50px;
     right: 0;
     bottom: -38px;
-    background-color: #296ec6;
+    background-color: var(--aqua_green);
     color: #fff;
     border-radius: 0.5rem;
 }
@@ -404,7 +404,7 @@ label {
     height: 50px;
     right: 0;
     bottom: -38px;
-    background-color: #296ec6;
+    background-color: var(--aqua_green);
     color: #fff;
     border-radius: 0.5rem;
 }
@@ -414,15 +414,15 @@ label {
     .attrEntry
     .verify
     .sendButton[id$='ver_but_resend']:hover {
-    background-color: #1662c7;
+    background-color: var(--dark_green);
 }
 #attributeList ul li .attrEntry .verificationControlContent .sendNewCode:hover {
-    background-color: #1662c7;
+    background-color: var(--dark_green);
 }
 #attributeList ul li .attrEntry .verify .editButton {
     border: none;
     color: #fff;
-    background-color: #296ec6;
+    background-color: var(--aqua_green);
     width: 60%;
     height: 50px;
     border-radius: 0.5rem;
@@ -430,13 +430,13 @@ label {
 #attributeList ul li .attrEntry .verificationControlContent .changeClaims {
     border: none;
     color: #fff;
-    background-color: #296ec6;
+    background-color: var(--aqua_green);
     width: 60%;
     height: 50px;
     border-radius: 0.5rem;
 }
 #attributeList ul li .attrEntry .verify .editButton:hover {
-    background-color: #1662c7;
+    background-color: var(--dark_green);
 }
 #attributeList
     ul
@@ -444,7 +444,7 @@ label {
     .attrEntry
     .verificationControlContent
     .changeClaims:hover {
-    background-color: #1662c7;
+    background-color: var(--dark_green);
 }
 #attributeList ul li .attrEntry .verify #email_ver_input_label {
     display: none !important;
@@ -691,9 +691,6 @@ html {
     background-color: var(--aqua_green);
 }
 
-.sendCode{
-    background-color: var(--aqua_green);
-}
 
 .sendCode:hover{
     background-color: var(--dark_green);
