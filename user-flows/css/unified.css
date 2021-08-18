@@ -1,5 +1,7 @@
 @import url(_common.css);
 
+
+
 /* inject: css */
 .unified_container .row .panel-default {
     padding: 40px 30px;
@@ -71,7 +73,7 @@
     .buttons
     button {
     background-image: none;
-    background-color: #296ec6;
+    background-color: var(--aqua_green);
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
@@ -142,7 +144,7 @@
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    background-color: #1662c7;
+    background-color: var(--dark_green);
     color: #fff;
 }
 .unified_container .row .panel-default #api .localAccount .entry .entry-item {
