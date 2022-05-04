@@ -6,7 +6,8 @@
     "scripts": {
         "deploy": "npm version patch && npm run deploy:all",
         "deploy:all": "npm publish --access public",
-        "start": "http-server"
+        "start": "http-server",
+        "build": ""
     },
     "repository": {
         "type": "git",
