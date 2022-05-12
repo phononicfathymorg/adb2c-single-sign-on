@@ -2,15 +2,15 @@ name: GitHub Artifacts - Release
 
 on:
   push:
-    branches: [main,feature/button-color]
+    branches: [main]
   pull_request:
-    branches: [main,feature/button-color]
+    branches: [main]
 
 permissions: write-all
 
 env:
   CI: false
-  Branches: main,feature/button-color
+  Branches: main
   MainBranch: main
   NPMRegistry: https://registry.npmjs.org/
   InstallCommand: npm ci
